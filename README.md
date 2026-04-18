@@ -6,6 +6,8 @@ The `push_swap` project aims to sort numbers with least possible amount of comma
 This project was made by implementing **Chunk algorithm**.
 this algorithm focuses on divinding numbers into specific chunks/segments, and pushing them to Stack B sequentially. This reduces the search space and makes pushing the numbers back to Stack A in descending order significantly more efficient.
 
+This project 
+
 ### Technical Struggles
 During the development of this project, my main struggles revolved around:
 * **Linked Lists:** Adapting to and manipulating custom linked list structures to properly and safely represent the stacks without memory leaks or segmentation faults.

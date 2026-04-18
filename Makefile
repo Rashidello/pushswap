@@ -6,13 +6,14 @@ CFLAGS = -Wall -Wextra -Werror
 SRCS = main.c \
        chunks.c \
        commands.c \
+       commands2.c \
        ft_atoll.c \
        ft_split.c \
        helpers.c \
        helpers2.c \
        ft_printf/ft_nbr.c \
        ft_printf/ft_printf.c \
-       ft_printf/ft_string.c
+       ft_printf/ft_string.c 
 
 OBJS = $(SRCS:.c=.o)
 

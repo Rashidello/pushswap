@@ -61,3 +61,19 @@ int	get_pos(t_node *b, int index)
 	}
 	return (0);
 }
+
+int	get_min_index_in_a(t_node *a)
+{
+	int	min;
+
+	if (!a)
+		return (-1);
+	min = a->index;
+	while (a)
+	{
+		if (a->index < min)
+			min = a->index;
+		a = a->next;
+	}
+	return (min);
+}

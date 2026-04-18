@@ -17,6 +17,7 @@
 # include <stdarg.h>
 # include <stddef.h>
 # include <stdlib.h>
+# include <stdio.h>
 
 typedef struct s_node
 {
@@ -47,9 +48,13 @@ void	rb(t_node **b);
 void	rrb(t_node **b);
 void	pb(t_node **a, t_node **b);
 void	pa(t_node **a, t_node **b);
+void	sa(t_node **a);
+void	rra(t_node **a);
 
 void	push_to_b(t_node **a, t_node **b, int size);
 void	push_to_a(t_node **a, t_node **b);
+void	min_three(t_node **a);
+void	min_five(t_node **a, t_node **b, int size);
 void	chunks(t_node **a, t_node **b, int size);
 
 int		is_valid(char *str);
@@ -61,5 +66,6 @@ t_node	*new_node(int value);
 void	push_front(t_node **stack, int value);
 int		stack_size(t_node *stack);
 int		get_pos(t_node *b, int index);
+int		get_min_index_in_a(t_node *a);
 
 #endif
