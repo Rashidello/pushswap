@@ -54,8 +54,19 @@ void	free_stack(t_node **stack)
 	}
 }
 
-void	error(void)
+void	error(t_node **a, char **tokens)
 {
+	int	i;
+
+	if (a)
+		free_stack(a);
+	if (tokens)
+	{
+		i = 0;
+		while (tokens[i])
+			free(tokens[i++]);
+		free(tokens);
+	}
 	write(2, "Error\n", 6);
 	exit(1);
 }

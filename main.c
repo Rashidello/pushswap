@@ -76,7 +76,7 @@ void	parse(t_node **stack_a, int *size, char *str)
 
 	tokens = ft_split(str, ' ');
 	if (!tokens || !tokens[0])
-		error ();
+		error (stack_a, tokens);
 	j = 0;
 	while (tokens[j])
 		j++;
@@ -84,9 +84,9 @@ void	parse(t_node **stack_a, int *size, char *str)
 	while (j >= 0)
 	{
 		if (!is_valid(tokens[j]))
-			error();
+			error(stack_a, tokens);
 		if (is_duplicate(*stack_a, (int)ft_atoll(tokens[j])))
-			error();
+			error(stack_a, tokens);
 		push_front(stack_a, ft_atoll(tokens[j]));
 		(*size)++;
 		free(tokens[j]);

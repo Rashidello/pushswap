@@ -40,7 +40,7 @@ ssize_t	ft_ptr(unsigned long long nbr);
 int		max_index_in_b(t_node *b);
 int		is_sorted(t_node *a);
 void	free_stack(t_node **stack);
-void	error(void);
+void	error(t_node **a, char **tokens);
 int		ft_isdigit(char c);
 
 void	ra(t_node **a);
