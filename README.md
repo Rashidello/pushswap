@@ -1,4 +1,4 @@
-This project has been created as part of the 42 curriculum by you rarayano.
+This project has been created as part of the 42 curriculum by rarayano.
 
 ## Description
 The `push_swap` project aims to sort numbers with least possible amount of commands.
